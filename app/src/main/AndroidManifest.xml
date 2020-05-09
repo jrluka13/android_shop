@@ -8,11 +8,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".AnalisLayot"/>
+        <activity android:name=".NotificationLayoutActivity"/>
+        <activity android:name=".DashboardLayoutActivity"/>
+        <activity android:name=".DrawerLayoutActivity" />
+        <activity android:name=".Registr" />
+        <activity android:name=".EnterToAdmin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Sales11"
             android:label="@string/title_activity_sales11"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".Sales10"
             android:label="@string/title_activity_sales10"

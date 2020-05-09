@@ -93,6 +93,7 @@ public class Tasks extends AppCompatActivity {
         imageClick9();
         imageClick10();
         imageClick11();
+        imageClick12();
     }
 
     public void imageClick1 () {
@@ -221,6 +222,17 @@ public class Tasks extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(Tasks.this, Task11.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+    }
+    public void imageClick12 () {
+        img12.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Tasks.this, DrawerLayoutActivity.class);
                         startActivity(intent);
                     }
                 }

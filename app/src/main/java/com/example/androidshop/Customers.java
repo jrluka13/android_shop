@@ -93,6 +93,7 @@ public class Customers extends AppCompatActivity {
         imageClick9();
         imageClick10();
         imageClick11();
+        imageClick12();
 
     }
 
@@ -222,6 +223,17 @@ public class Customers extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(Customers.this, Customer11.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+    }
+    public void imageClick12 () {
+        img12.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Customers.this, DrawerLayoutActivity.class);
                         startActivity(intent);
                     }
                 }
